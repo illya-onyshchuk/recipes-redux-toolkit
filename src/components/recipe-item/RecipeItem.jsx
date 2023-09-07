@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import Button from '../../components/UI/Button';
 import styles from './RecipeItem.module.css'
 import { useActions } from '../../hooks/useActions';
