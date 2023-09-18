@@ -14,4 +14,4 @@ export const useActions = () => {
 
   return useMemo(() => bindActionCreators(rootActions,
     dispatch), [dispatch])
-}   
+}
