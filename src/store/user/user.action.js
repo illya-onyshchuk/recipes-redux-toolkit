@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit"
 const fetchUserById = userId => {
  return new Promise((resolve) => 
     setTimeout(() => resolve({
-      id: 1, name: 'Illay'
+      id: 1, name: 'Sandwich'
     }), 1000)
   )
 }

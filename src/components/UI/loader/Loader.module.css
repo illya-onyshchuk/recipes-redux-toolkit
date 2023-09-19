@@ -6,8 +6,9 @@
   height: var(--height-of-loader);
   border-radius: 30px;
   background-color: rgba(0,0,0,0.2);
-  position: relative;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  right: 50%;
 }
 
 .loader::before {
