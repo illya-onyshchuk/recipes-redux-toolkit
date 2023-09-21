@@ -4,13 +4,16 @@ const API_URL = 'http://localhost:4200/recipes'
 
 export const api = createApi({
   reducerPath: 'api',
-  tagTypes: ['Recipes'],
+  tagTypes: ['Recipe'],
   baseQuery: fetchBaseQuery({
     baseUrl: API_URL,
   }),
   endpoints: builder => ({
     getRecipes: builder.query({
-      query: () => '/',
+      query: () => '/?_sort=id&_order=desc',
+      providesTags: () => [{
+        type: 'Recipe',
+      }]
     }),
   })
 });
